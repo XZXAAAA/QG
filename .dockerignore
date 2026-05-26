@@ -1,0 +1,8 @@
+frontend/node_modules/
+frontend/dist/
+backend/.env
+frontend/.env
+**/__pycache__/
+**/*.pyc
+backend/news_cache.db
+tmp_mcp_pkg/

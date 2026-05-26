@@ -1,0 +1,1659 @@
+{
+  "name": "start up每日大事",
+  "nodes": [
+    {
+      "parameters": {
+        "maxItems": 3
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        -2272,
+        -96
+      ],
+      "id": "ea6676fa-5a65-4a89-ab3c-3ef1074d7380",
+      "name": "Limit"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "34b47a5a-1877-4de3-a029-216e78f0be1d",
+              "name": "标题",
+              "value": "={{$json.title}}",
+              "type": "string"
+            },
+            {
+              "id": "d46623f9-30a8-43df-959e-183f9d99c0dc",
+              "name": "日期",
+              "value": "={{$json.pubDate \n\n $json.date}}",
+              "type": "string"
+            },
+            {
+              "id": "cf1de80e-3fc9-419e-9a11-36731f88445d",
+              "name": "内容",
+              "value": "={{$json.content \n\n $json['content:encodedSnippet']}}",
+              "type": "string"
+            },
+            {
+              "id": "5964a3d7-d520-49d8-a815-6766c4160053",
+              "name": "链接",
+              "value": "={{$json.link \n\n $json.guid}}",
+              "type": "string"
+            },
+            {
+              "id": "3fa49d25-0caa-406c-9993-3582a865f5dd",
+              "name": "媒体",
+              "value": "钛媒体",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2048,
+        -96
+      ],
+      "id": "2c414734-9ba3-46d1-9a01-d92d8e940f82",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "maxItems": 3
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        -2272,
+        96
+      ],
+      "id": "88a45467-8c35-4fa0-a9e1-33e9b0725bdc",
+      "name": "Limit1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6c4ebdbc-b642-42f6-ab87-7c7eacc46254",
+              "name": "标题",
+              "value": "={{$json.title}}",
+              "type": "string"
+            },
+            {
+              "id": "7b22f1b4-9875-47c9-a595-3df97a20e126",
+              "name": "日期",
+              "value": "={{$json.pubDate \n\n $json.date}}",
+              "type": "string"
+            },
+            {
+              "id": "5150b4a8-1672-4b90-89ea-b6832ce5de6d",
+              "name": "内容",
+              "value": "={{$json.content \n\n $json['content:encodedSnippet']}}",
+              "type": "string"
+            },
+            {
+              "id": "5b348fbd-115b-4fba-954c-55eded351443",
+              "name": "链接",
+              "value": "={{$json.link \n\n $json.guid}}",
+              "type": "string"
+            },
+            {
+              "id": "ea3cf55f-cfe8-44fe-9f76-20a2f3334988",
+              "name": "媒体",
+              "value": "36氪（消费电子）",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2048,
+        96
+      ],
+      "id": "6f5b87b4-b157-42c5-890e-8adb95811809",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "maxItems": 3
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        -2272,
+        288
+      ],
+      "id": "a415c61e-87a2-4de4-bbdc-eba64439d97d",
+      "name": "Limit3"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "05676956-66e1-4e68-bbe2-1c5b03b31c4e",
+              "name": "标题",
+              "value": "={{$json.title}}",
+              "type": "string"
+            },
+            {
+              "id": "c321fccd-b1de-43f3-9736-f8867b488508",
+              "name": "日期",
+              "value": "={{$json.pubDate \n\n $json.date}}",
+              "type": "string"
+            },
+            {
+              "id": "ba4bd98e-ae32-4df2-9e64-6a89266c3259",
+              "name": "内容",
+              "value": "={{$json.content \n\n $json['content:encodedSnippet']}}",
+              "type": "string"
+            },
+            {
+              "id": "9a843cf7-192f-4a84-ae89-0dab2c4cb028",
+              "name": "链接",
+              "value": "={{$json.link \n\n $json.guid}}",
+              "type": "string"
+            },
+            {
+              "id": "166530cb-828d-4907-86fe-f859401fb07d",
+              "name": "媒体",
+              "value": "IT之家",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2048,
+        288
+      ],
+      "id": "833a2874-aa80-4bc3-b339-9b06bc15a564",
+      "name": "Edit Fields3"
+    },
+    {
+      "parameters": {
+        "maxItems": 3
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        -2272,
+        480
+      ],
+      "id": "0405da3f-b030-45e5-adb4-bd68ae281a7d",
+      "name": "Limit4"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c8da2537-b125-4b3a-9a00-d3637771ad60",
+              "name": "标题",
+              "value": "={{$json.title}}",
+              "type": "string"
+            },
+            {
+              "id": "e98798b4-7109-40c0-bcf6-9bcaa97fb73a",
+              "name": "日期",
+              "value": "={{$json.pubDate \n\n $json.date}}",
+              "type": "string"
+            },
+            {
+              "id": "afc89771-4e7e-4371-ae21-c2da56ad1b08",
+              "name": "内容",
+              "value": "={{$json.content \n\n $json['content:encodedSnippet']}}",
+              "type": "string"
+            },
+            {
+              "id": "ab6946a5-2f4b-4341-8e55-dd0da5d2852b",
+              "name": "链接",
+              "value": "={{$json.link \n\n $json.guid}}",
+              "type": "string"
+            },
+            {
+              "id": "2559f359-fdca-4524-a92b-72f4c35a43bc",
+              "name": "媒体",
+              "value": "爱范儿",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2048,
+        480
+      ],
+      "id": "382ecaf8-1e3f-4733-830b-42f03fb191fa",
+      "name": "Edit Fields4"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        1008,
+        1104
+      ],
+      "id": "8a8e019c-a4aa-4425-af00-bb54f7faa471",
+      "name": "DeepSeek Chat Model",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "Y78iyasMA3FQMxs6",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n  \"标题\":\"xxxx\",\n  \"日期\": \"\",\n  \"内容\": \"今日特变电工发布公告称，公司成功中标国家电网某特高压交流项目，将提供变压器等核心设备。\",\n  \"影响板块\": \"电力\",\n  \"市场情绪\": \"利好\",\n  \"分析逻辑\":\"特高压建设是电网投资重头戏，中标大单直接增厚公司业绩，对电力设备板块有正向催化\"\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        1152,
+        1184
+      ],
+      "id": "07860b41-b6ac-4407-bdaf-5235bf42b6b6",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "maxItems": 3
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        -2272,
+        1056
+      ],
+      "id": "8da29927-e877-432d-a80f-f28e3d1de626",
+      "name": "Limit6"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c8da2537-b125-4b3a-9a00-d3637771ad60",
+              "name": "标题",
+              "value": "={{$json.title}}",
+              "type": "string"
+            },
+            {
+              "id": "e98798b4-7109-40c0-bcf6-9bcaa97fb73a",
+              "name": "日期",
+              "value": "={{$json.pubDate \n\n $json.date}}",
+              "type": "string"
+            },
+            {
+              "id": "afc89771-4e7e-4371-ae21-c2da56ad1b08",
+              "name": "内容",
+              "value": "={{$json.content \n\n $json['content:encodedSnippet']}}",
+              "type": "string"
+            },
+            {
+              "id": "ab6946a5-2f4b-4341-8e55-dd0da5d2852b",
+              "name": "链接",
+              "value": "={{$json.link \n\n $json.guid}}",
+              "type": "string"
+            },
+            {
+              "id": "2559f359-fdca-4524-a92b-72f4c35a43bc",
+              "name": "媒体",
+              "value": "钛媒体（机器人）",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2048,
+        1056
+      ],
+      "id": "2f0019dc-0ad5-4ecf-8da1-57e6c3ccf174",
+      "name": "Edit Fields6"
+    },
+    {
+      "parameters": {
+        "maxItems": 3
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        -2272,
+        1440
+      ],
+      "id": "821362ef-0070-477a-8be4-f5769ca919b3",
+      "name": "Limit7"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c8da2537-b125-4b3a-9a00-d3637771ad60",
+              "name": "标题",
+              "value": "={{$json.title}}",
+              "type": "string"
+            },
+            {
+              "id": "e98798b4-7109-40c0-bcf6-9bcaa97fb73a",
+              "name": "日期",
+              "value": "={{$json.pubDate \n\n $json.date}}",
+              "type": "string"
+            },
+            {
+              "id": "afc89771-4e7e-4371-ae21-c2da56ad1b08",
+              "name": "内容",
+              "value": "={{$json.content \n\n $json['content:encodedSnippet']}}",
+              "type": "string"
+            },
+            {
+              "id": "ab6946a5-2f4b-4341-8e55-dd0da5d2852b",
+              "name": "链接",
+              "value": "={{$json.link \n\n $json.guid}}",
+              "type": "string"
+            },
+            {
+              "id": "2559f359-fdca-4524-a92b-72f4c35a43bc",
+              "name": "媒体",
+              "value": "36kr（机器人）",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2048,
+        1440
+      ],
+      "id": "07208b1c-ab33-4437-a6fd-028102caebb1",
+      "name": "Edit Fields7"
+    },
+    {
+      "parameters": {
+        "maxItems": 3
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        -2272,
+        1248
+      ],
+      "id": "9e77f99c-942b-4412-85ed-05869e593e57",
+      "name": "Limit9"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c8da2537-b125-4b3a-9a00-d3637771ad60",
+              "name": "标题",
+              "value": "={{$json.title}}",
+              "type": "string"
+            },
+            {
+              "id": "e98798b4-7109-40c0-bcf6-9bcaa97fb73a",
+              "name": "日期",
+              "value": "={{$json.pubDate \n\n $json.date}}",
+              "type": "string"
+            },
+            {
+              "id": "afc89771-4e7e-4371-ae21-c2da56ad1b08",
+              "name": "内容",
+              "value": "={{$json.content \n\n $json['content:encodedSnippet']}}",
+              "type": "string"
+            },
+            {
+              "id": "ab6946a5-2f4b-4341-8e55-dd0da5d2852b",
+              "name": "链接",
+              "value": "={{$json.link \n\n $json.guid}}",
+              "type": "string"
+            },
+            {
+              "id": "2559f359-fdca-4524-a92b-72f4c35a43bc",
+              "name": "媒体",
+              "value": "雷锋网（机器人）",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2048,
+        1248
+      ],
+      "id": "bafc8fc2-c397-4475-bfd1-9644c47b531c",
+      "name": "Edit Fields9"
+    },
+    {
+      "parameters": {
+        "numberInputs": 4
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -1408,
+        1056
+      ],
+      "id": "86c3bba3-3724-4abe-b088-9e7736a67a08",
+      "name": "机器人"
+    },
+    {
+      "parameters": {
+        "url": "https://www.tmtpost.com/rss",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -2496,
+        -96
+      ],
+      "id": "f9268518-c1f8-445f-a340-a62354a13f91",
+      "name": "钛媒体"
+    },
+    {
+      "parameters": {
+        "url": "https://36kr.com/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -2496,
+        96
+      ],
+      "id": "31be3d91-c80b-4dc2-824c-158a5e0b844c",
+      "name": "36氪（消费电子）"
+    },
+    {
+      "parameters": {
+        "url": "https://www.ithome.com/rss/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -2496,
+        288
+      ],
+      "id": "2b5463dd-ab42-470c-9bca-39a5e383a841",
+      "name": "IT之家"
+    },
+    {
+      "parameters": {
+        "url": "https://www.ifanr.com/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -2496,
+        480
+      ],
+      "id": "95df949d-13d8-441f-8956-c829b9c8e201",
+      "name": "爱范儿"
+    },
+    {
+      "parameters": {
+        "numberInputs": 7
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -1360,
+        432
+      ],
+      "id": "abb28269-b11d-46b7-91ae-86fa22f61702",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "maxItems": 3
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        -2272,
+        672
+      ],
+      "id": "81fbba01-a817-443f-8954-331c17dd073b",
+      "name": "Limit5"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c8da2537-b125-4b3a-9a00-d3637771ad60",
+              "name": "标题",
+              "value": "={{$json.title}}",
+              "type": "string"
+            },
+            {
+              "id": "e98798b4-7109-40c0-bcf6-9bcaa97fb73a",
+              "name": "日期",
+              "value": "={{$json.pubDate \n\n $json.date}}",
+              "type": "string"
+            },
+            {
+              "id": "afc89771-4e7e-4371-ae21-c2da56ad1b08",
+              "name": "内容",
+              "value": "={{$json.content \n\n $json['content:encodedSnippet']}}",
+              "type": "string"
+            },
+            {
+              "id": "ab6946a5-2f4b-4341-8e55-dd0da5d2852b",
+              "name": "链接",
+              "value": "={{$json.link \n\n $json.guid}}",
+              "type": "string"
+            },
+            {
+              "id": "2559f359-fdca-4524-a92b-72f4c35a43bc",
+              "name": "媒体",
+              "value": "少数派",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2048,
+        672
+      ],
+      "id": "d8076ac9-c77b-48dc-abcd-01e7169d7107",
+      "name": "Edit Fields5"
+    },
+    {
+      "parameters": {
+        "maxItems": 3
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        -2272,
+        864
+      ],
+      "id": "dd8d2f66-ea64-4435-b038-6a441beeb146",
+      "name": "Limit10"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c8da2537-b125-4b3a-9a00-d3637771ad60",
+              "name": "标题",
+              "value": "={{$json.title}}",
+              "type": "string"
+            },
+            {
+              "id": "e98798b4-7109-40c0-bcf6-9bcaa97fb73a",
+              "name": "日期",
+              "value": "={{$json.pubDate \n\n $json.date}}",
+              "type": "string"
+            },
+            {
+              "id": "afc89771-4e7e-4371-ae21-c2da56ad1b08",
+              "name": "内容",
+              "value": "={{$json.content \n\n $json['content:encodedSnippet']}}",
+              "type": "string"
+            },
+            {
+              "id": "ab6946a5-2f4b-4341-8e55-dd0da5d2852b",
+              "name": "链接",
+              "value": "={{$json.link \n\n $json.guid}}",
+              "type": "string"
+            },
+            {
+              "id": "2559f359-fdca-4524-a92b-72f4c35a43bc",
+              "name": "媒体",
+              "value": "雷锋网（消费电子）",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2048,
+        864
+      ],
+      "id": "c041149f-b924-4b0d-9341-7c565fcd117d",
+      "name": "Edit Fields10"
+    },
+    {
+      "parameters": {
+        "url": "https://sspai.com/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -2496,
+        672
+      ],
+      "id": "341cd918-101a-4424-a213-a8ac3fcb33e8",
+      "name": "少数派"
+    },
+    {
+      "parameters": {
+        "url": "https://www.leiphone.com/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -2496,
+        864
+      ],
+      "id": "1b68af80-a021-4958-9fef-22293abc9823",
+      "name": "雷锋网（消费电子）"
+    },
+    {
+      "parameters": {
+        "url": "https://www.tmtpost.com/rss",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -2496,
+        1056
+      ],
+      "id": "de593582-0b21-4a16-9e31-a19bcfabc337",
+      "name": "钛媒体（机器人板块）"
+    },
+    {
+      "parameters": {
+        "url": "https://36kr.com/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -2496,
+        1440
+      ],
+      "id": "e3d58677-e7fb-4cb5-99c5-007d3e5902f7",
+      "name": "36kr（机器人）"
+    },
+    {
+      "parameters": {
+        "url": "https://www.leiphone.com/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -2496,
+        1248
+      ],
+      "id": "2b45bf48-8ca0-415d-9d48-60e637ef8ed8",
+      "name": "雷锋网（机器人）"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Please fill in the actual news content in the placeholders, the news content is strictly refined to 100-200 words, only extract core information and do not exceed the word limit:\nTitle: {{ $json.output['标题'] }}\nContent: {{ $json.output['内容'] }}\nDate: {{ $json.output['日期'] }}\nBelow is the structured analysis template in full English:\nSummary\n[Concise summary of the core points of the news]\nSector Classification\nConsumer Electronics / Robotics / Biotech & Health / New Energy / Other\nSentiment Analysis\nBullish / Bearish / Neutral\nLogical Support",
+        "hasOutputParser": true,
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "position": [
+        1056,
+        848
+      ],
+      "id": "1b6e165c-ccb0-4183-9988-d3eb04c6d360",
+      "name": "数据流整理成标准格式"
+    },
+    {
+      "parameters": {
+        "content": "这边一定要加merge，将两股信息流合并成一股，因为两股信息流的时间不一致，会导致在用模型分析的时候重复两遍，这会使得所有的流程与最后的输出都会重复"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -1200,
+        2496
+      ],
+      "id": "2e84a0ed-cd4e-4bd1-955a-1a96c657bc68",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -1184,
+        960
+      ],
+      "id": "3b496578-84a3-444f-a6d5-6f574e4d7bd8",
+      "name": "整合信息源"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        1136
+      ],
+      "id": "a45bc595-453b-4386-8551-9814ac8d09d6",
+      "name": "DeepSeek Chat Model2",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "Y78iyasMA3FQMxs6",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n  \"标题\":\"xxxx\",\n  \"日期\": \"Sun, 05 Apr 2026\",\n  \"内容\": \"今日特变电工发布公告称，公司成功中标国家电网某特高压交流项目，将提供变压器等核心设备。\"\n}",
+        "autoFix": true
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        -112,
+        1120
+      ],
+      "id": "953acd2a-46c5-4e48-b8e8-804a8a00c834",
+      "name": "Structured Output Parser2"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=\n你是一个精准的数据格式化助手。\n\n任务：\n1. 接收输入的内容（JSON格式）。\n2. 仅针对“日期”字段进行处理，将其统一转换为 \"Day, DD Mon YYYY\" 格式（例如：Sun, 05 Apr 2026）。\n3. 保持“标题”、“内容”、“链接”、“媒体”等其他所有字段的内容和结构绝对不变。\n4. 如果日期已经是该格式，则保持原样。\n\n待处理数据：\n{{ $json['日期'] }}\n\n请直接输出处理后的 JSON 对象，不要包含任何解释性文字：\n{{ $json['标题'] }}\n{{ $json['内容'] }}\n",
+        "hasOutputParser": true,
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "position": [
+        -352,
+        928
+      ],
+      "id": "aa61ac97-7a9d-41e4-838f-7d326e62b86c",
+      "name": "统一日期，要不然正则永远无法穷尽所有可能"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "d3dba316-9e43-4027-b3f9-60b0c3f40f01",
+              "leftValue": "={{ (() => {\n  // 1. 获取 AI 统一化后的日期字符串\n  const raw = $json.output['日期']; \n  if (!raw) return false;\n\n  try {\n    // 2. 将字符串转为 Date 对象\n    const itemDate = new Date(raw);\n    const now = new Date();\n\n    // 3. 提取年、月、日进行比对（忽略具体时分秒）\n    // 使用 .toDateString() 可以快速比对 \"Sun Apr 05 2026\" 这种纯日期部分\n    return itemDate.toDateString() === now.toDateString();\n\n  } catch (e) {\n    return false;\n  }\n})() }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {
+          "ignoreCase": false
+        }
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.3,
+      "position": [
+        880,
+        848
+      ],
+      "id": "2f3abc9b-e7c6-4a71-8760-81034643df2a",
+      "name": "筛选出所有今天的新闻",
+      "executeOnce": false
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        -48,
+        1328
+      ],
+      "id": "0fd63e66-26b2-41c9-96ee-477ac8a8a529",
+      "name": "DeepSeek Chat Model3",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "Y78iyasMA3FQMxs6",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        1792,
+        1056
+      ],
+      "id": "119ecb0a-9fa2-4309-9728-40043611f89c",
+      "name": "DeepSeek Chat Model4",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "Y78iyasMA3FQMxs6",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=你是一个专业的数据清洗助手。你的任务是分析下方输入的内容列表，并进行【语义去重】。\n\n待处理内容：\n{{ $json.translatedText }}\n\n任务要求：\n1. 逐一比对所有条目。如果多条内容描述的是同一个核心事件（即便措辞、语言不同），视为重复。\n2. 重复条目只保留信息最完整的一条。\n3. 内容完全不同的条目原样保留。\n4. 如果某条内容没有提供任何新信息（已被其他条目完全覆盖），则删除。\n\n例子：\n内容相似的，需要删除的内容：\nA:在OpenAI计划进行首次公开募股（IPO）的关键筹备阶段，公司内部出现重大管理动荡。首席财务官（CFO）公开表示反对当前的IPO计划，而首席运营官（COO）则被调离核心岗位。这一系列变动暴露了公司在财务战略路线上的严重分歧，并导致IPO前夕的高管团队出现集中缺位，为公司的上市进程蒙上阴影。\nB：On the eve of its anticipated IPO, OpenAI faces internal turmoil. The company's CFO has publicly stated that an IPO is not currently planned, contradicting market expectations. Simultaneously, the COO has been transferred to a different role within the organization. These events point to a significant rift within the executive team regarding financial strategy and corporate direction, casting uncertainty over the company's near-term capital market plans.\n\n\n输出格式：\n- 如果有去重后的新内容，请按原有的JSON结构返回：\n- 如果判断为重复，不需输出，也不返回任何内容",
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "position": [
+        1840,
+        864
+      ],
+      "id": "62675242-6782-4cea-b142-79a5baea4688",
+      "name": "去重新闻"
+    },
+    {
+      "parameters": {
+        "text": "=Title: {{ $json.output['标题'] }} \n\nDate: {{ $json.output['日期'] }} \n\nCategory: {{ $json.output['影响板块'] }}  \n\nMarket: {{ $json.output['市场情绪'] }}  \n\nContent: {{ $json.output['内容'] }}  \n\n\n\n\n\n\n\n\n\n\n",
+        "translateTo": "en"
+      },
+      "type": "n8n-nodes-base.googleTranslate",
+      "typeVersion": 2,
+      "position": [
+        1392,
+        848
+      ],
+      "id": "889834fa-726f-486b-8c44-2bd23c3ee306",
+      "name": "将原文翻译成英文",
+      "credentials": {
+        "googleTranslateOAuth2Api": {
+          "id": "qvC8of38QGcXQZr5",
+          "name": "Google Translate account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\n// 解析每个item的文本，提取字段\nconst parseItem = (text) => {\n  const get = (key) => {\n    const regex = new RegExp(`\"${key}\":\\\\s*\"([^\"]*(?:\\\\\\\\.[^\"]*)*)\"`, 'i');\n    const match = text.match(regex);\n    return match ? match[1].replace(/\\\\\"/g, '\"').replace(/\\\\n/g, ' ').trim() : '';\n  };\n  return {\n    title:    get('Title'),\n    date:     get('Date'),\n    category: get('Category'),\n    market:   get('Market'),\n    content:  get('Content'),\n  };\n};\n\n// 收集所有条目\nconst allEntries = [];\nfor (const item of items) {\n  const text = item.json.text || item.json.translatedText || JSON.stringify(item.json);\n  const parsed = parseItem(text);\n  if (parsed.title) allEntries.push(parsed);\n}\n\n// 按 Category 分组\nconst grouped = {};\nfor (const entry of allEntries) {\n  const cat = entry.category || 'Unknown';\n  if (!grouped[cat]) grouped[cat] = [];\n  grouped[cat].push(entry);\n}\n\n// 输出：每个 category 一个 item\nreturn Object.entries(grouped).map(([category, entries]) => ({\n  json: {\n    category,\n    count: entries.length,\n    entries,\n  }\n}));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2176,
+        864
+      ],
+      "id": "b9ecf695-2c01-4c1d-9cdf-a5956ba9460d",
+      "name": "按照不同的版块分类"
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\n\nreturn items.map(item => {\n  let text = item.json.translatedText || '';\n  \n  // 清理HTML实体\n  text = text\n    .replace(/&#39;/g, \"'\")\n    .replace(/&quot;/g, '\"')\n    .replace(/&amp;/g, '&');\n  \n  // 按字段标签拆分，重新加上空行\n  text = text\n    .replace(/(Date:)/g, '\\n\\n$1')\n    .replace(/(Category:)/g, '\\n\\n$1')\n    .replace(/(Market:)/g, '\\n\\n$1')\n    .replace(/(Content:)/g, '\\n\\n$1');\n  \n  return {\n    json: {\n      ...item.json,\n      translatedText: text.trim()\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1616,
+        848
+      ],
+      "id": "d0c0b22c-2505-484d-9bb2-4cc9d240c7df",
+      "name": "原文整理成统一字段"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        -944,
+        1104
+      ],
+      "id": "7f8942f4-1796-4538-bd55-646fe9ecffbe",
+      "name": "DeepSeek Chat Model1",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "Y78iyasMA3FQMxs6",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=# 任务\n判断新闻是否同时满足：\n1. 中国新闻（事件主体、发生地、公司/机构、人物或政策与中国大陆相关）\n2. 属于以下任一领域：生物医药、硬科技、机器人、新能源\n\n# 输出\n- 同时满足 → 输出 true\n- 任一不满足 → 输出 Flase（注意拼写）\n\n# 新闻内容\n{{ $json['内容'] }}",
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "position": [
+        -976,
+        864
+      ],
+      "id": "7cae4767-bc35-476c-8450-0ebb6f697238",
+      "name": "判断是否为中国新闻"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -608,
+        1072
+      ],
+      "id": "16c15940-8bba-4c27-b8b6-45ef0aa5e1e6",
+      "name": "将判断信息与原信息整合"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "85cae560-4d72-4103-b502-1c83779da2c6",
+              "leftValue": "={{ $json.text }}",
+              "rightValue": "true",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -464,
+        704
+      ],
+      "id": "edc12ff7-86f4-440c-a08a-915af1cb7f1e",
+      "name": "将true 的信息输出"
+    },
+    {
+      "parameters": {
+        "jsCode": "const seenTitles = new Set();\nconst result = [];\n\nfor (const item of $input.all()) {\n  const dedupedEntries = [];\n\n  for (const entry of item.json.entries) {\n    if (!seenTitles.has(entry.title)) {\n      seenTitles.add(entry.title);\n      dedupedEntries.push(entry);\n    }\n  }\n\n  result.push({\n    json: {\n      ...item.json,\n      entries: dedupedEntries,\n      count: dedupedEntries.length  // 顺便更新 count\n    }\n  });\n}\n\nreturn result;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2384,
+        864
+      ],
+      "id": "3a07ab6d-a373-4600-b236-baf224efe486",
+      "name": "删除标题相同的信息"
+    },
+    {
+      "parameters": {
+        "path": "45ce632e-b4d9-4e5b-a89c-aaa4ff9b0f8a",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -3296,
+        464
+      ],
+      "id": "b7f6b4eb-a4b5-46d0-84a9-3ab70ff621e9",
+      "name": "Webhook1",
+      "webhookId": "45ce632e-b4d9-4e5b-a89c-aaa4ff9b0f8a"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Limit": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Limit3": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields3": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "Limit4": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields4": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 4
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "数据流整理成标准格式",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "数据流整理成标准格式",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit6": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit7": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit9": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields6": {
+      "main": [
+        [
+          {
+            "node": "机器人",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields7": {
+      "main": [
+        [
+          {
+            "node": "机器人",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "Edit Fields9": {
+      "main": [
+        [
+          {
+            "node": "机器人",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "机器人": {
+      "main": [
+        [
+          {
+            "node": "整合信息源",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "钛媒体": {
+      "main": [
+        [
+          {
+            "node": "Limit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "36氪（消费电子）": {
+      "main": [
+        [
+          {
+            "node": "Limit1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IT之家": {
+      "main": [
+        [
+          {
+            "node": "Limit3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "爱范儿": {
+      "main": [
+        [
+          {
+            "node": "Limit4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit5": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit10": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields10": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 6
+          }
+        ]
+      ]
+    },
+    "Edit Fields5": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 5
+          }
+        ]
+      ]
+    },
+    "少数派": {
+      "main": [
+        [
+          {
+            "node": "Limit5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "雷锋网（消费电子）": {
+      "main": [
+        [
+          {
+            "node": "Limit10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "整合信息源",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "钛媒体（机器人板块）": {
+      "main": [
+        [
+          {
+            "node": "Limit6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "36kr（机器人）": {
+      "main": [
+        [
+          {
+            "node": "Limit7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "雷锋网（机器人）": {
+      "main": [
+        [
+          {
+            "node": "Limit9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "数据流整理成标准格式": {
+      "main": [
+        [
+          {
+            "node": "将原文翻译成英文",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "整合信息源": {
+      "main": [
+        [
+          {
+            "node": "判断是否为中国新闻",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "将判断信息与原信息整合",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "统一日期，要不然正则永远无法穷尽所有可能",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser2": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "统一日期，要不然正则永远无法穷尽所有可能",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "统一日期，要不然正则永远无法穷尽所有可能": {
+      "main": [
+        [
+          {
+            "node": "筛选出所有今天的新闻",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "筛选出所有今天的新闻": {
+      "main": [
+        [
+          {
+            "node": "数据流整理成标准格式",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model3": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Structured Output Parser2",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model4": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "去重新闻",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "去重新闻": {
+      "main": [
+        [
+          {
+            "node": "按照不同的版块分类",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "将原文翻译成英文": {
+      "main": [
+        [
+          {
+            "node": "原文整理成统一字段",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "按照不同的版块分类": {
+      "main": [
+        [
+          {
+            "node": "删除标题相同的信息",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "原文整理成统一字段": {
+      "main": [
+        [
+          {
+            "node": "去重新闻",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "判断是否为中国新闻",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "判断是否为中国新闻": {
+      "main": [
+        [
+          {
+            "node": "将判断信息与原信息整合",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "将判断信息与原信息整合": {
+      "main": [
+        [
+          {
+            "node": "将true 的信息输出",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "将true 的信息输出": {
+      "main": [
+        [
+          {
+            "node": "统一日期，要不然正则永远无法穷尽所有可能",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "删除标题相同的信息": {
+      "main": [
+        []
+      ]
+    },
+    "Webhook1": {
+      "main": [
+        [
+          {
+            "node": "钛媒体",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "36氪（消费电子）",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "IT之家",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "爱范儿",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "少数派",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "雷锋网（消费电子）",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "钛媒体（机器人板块）",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "36kr（机器人）",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "雷锋网（机器人）",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "122786cd-758b-408d-84b6-d89be8157e6d",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "832e33b56f983d200969c078f5d2deb61d033faed6f049b5dd814a99a1a4f015"
+  },
+  "id": "5uy90ZFezG5oq8Zi",
+  "tags": []
+}

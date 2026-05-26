@@ -1,0 +1,91 @@
+{
+  "name": "@ansvar/chinese-law-mcp",
+  "mcpName": "eu.ansvar/chinese-law-mcp",
+  "version": "3.0.0",
+  "description": "Chinese law MCP server — 1,188 national laws, administrative regulations, and departmental rules with 62,981 provisions from NPC National Law Database (flk.npc.gov.cn) and CAC (cac.gov.cn). Full-text search, citation validation, legal stance builder. Part of Ansvar Open Law (ansvar.eu/open-law) and the Ansvar MCP Network (ansvar.ai/mcp).",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "chinese-law-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "data/database.db"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:db": "node --import tsx scripts/build-db.ts",
+    "build:db:free": "node --import tsx scripts/build-db-free.ts",
+    "dev": "node --import tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:contract": "vitest run __tests__/contract/",
+    "ingest": "node --import tsx scripts/ingest.ts",
+    "ingest:cac": "node --import tsx scripts/ingest-cac.ts",
+    "check-updates": "node --import tsx scripts/check-updates.ts",
+    "drift:detect": "node --import tsx scripts/drift-detect.ts",
+    "validate": "npm test && npm run test:contract",
+    "health": "curl -s http://localhost:3000/health | jq .",
+    "prepublishOnly": "npm run build",
+    "postinstall": "test -d dist || npm run build || true",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ansvar/mcp-sqlite": "^1.0.3",
+    "@modelcontextprotocol/sdk": "^1.25.3",
+    "mammoth": "^1.11.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.0.0",
+    "@vercel/node": "^5.6.4",
+    "@vitest/coverage-v8": "^4.0.18",
+    "better-sqlite3": "^12.6.2",
+    "cheerio": "^1.0.0",
+    "playwright": "^1.58.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^4.0.18"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ansvar-Systems/chinese-law-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ansvar-Systems/chinese-law-mcp/issues"
+  },
+  "homepage": "https://github.com/Ansvar-Systems/chinese-law-mcp#readme",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "claude",
+    "chinese-law",
+    "cybersecurity-law",
+    "pipl",
+    "data-security",
+    "company-law",
+    "anti-monopoly",
+    "e-commerce",
+    "civil-code",
+    "china",
+    "legal",
+    "compliance",
+    "ansvar"
+  ],
+  "author": "Ansvar Systems <hello@ansvar.eu>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "overrides": {
+    "path-to-regexp": "^8.0.0",
+    "undici": "^7.0.0",
+    "ajv": "^8.18.0"
+  }
+}

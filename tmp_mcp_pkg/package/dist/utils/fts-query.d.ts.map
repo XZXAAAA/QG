@@ -1,0 +1,1 @@
+{"version":3,"file":"fts-query.d.ts","sourceRoot":"","sources":["../../src/utils/fts-query.ts"],"names":[],"mappings":"AAAA;;;;;;;;;;GAUG;AAKH,kDAAkD;AAClD,eAAO,MAAM,cAAc,IAAI,CAAC;AAKhC,MAAM,WAAW,gBAAgB;IAC/B,OAAO,EAAE,MAAM,CAAC;IAChB,QAAQ,CAAC,EAAE,MAAM,CAAC;IAClB,2EAA2E;IAC3E,QAAQ,EAAE,OAAO,CAAC;CACnB;AA+CD,wBAAgB,qBAAqB,CAAC,KAAK,EAAE,MAAM,GAAG,gBAAgB,CA+CrE"}
